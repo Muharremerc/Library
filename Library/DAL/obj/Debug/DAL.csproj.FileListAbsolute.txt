@@ -1,0 +1,24 @@
+C:\Users\muhar\source\repos\Library\DAL\bin\Debug\DAL.dll.config
+C:\Users\muhar\source\repos\Library\DAL\bin\Debug\DAL.dll
+C:\Users\muhar\source\repos\Library\DAL\bin\Debug\DAL.pdb
+C:\Users\muhar\source\repos\Library\DAL\bin\Debug\EntityFramework.dll
+C:\Users\muhar\source\repos\Library\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\muhar\source\repos\Library\DAL\bin\Debug\EntityFramework.xml
+C:\Users\muhar\source\repos\Library\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\muhar\source\repos\Library\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\muhar\source\repos\Library\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\muhar\source\repos\Library\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\muhar\source\repos\Library\DAL\obj\Debug\DAL.dll
+C:\Users\muhar\source\repos\Library\DAL\obj\Debug\DAL.pdb
+F:\MVC Library\Library\DAL\bin\Debug\DAL.dll.config
+F:\MVC Library\Library\DAL\bin\Debug\DAL.dll
+F:\MVC Library\Library\DAL\bin\Debug\DAL.pdb
+F:\MVC Library\Library\DAL\bin\Debug\EntityFramework.dll
+F:\MVC Library\Library\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\MVC Library\Library\DAL\bin\Debug\EntityFramework.xml
+F:\MVC Library\Library\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\MVC Library\Library\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\MVC Library\Library\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\MVC Library\Library\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\MVC Library\Library\DAL\obj\Debug\DAL.dll
+F:\MVC Library\Library\DAL\obj\Debug\DAL.pdb

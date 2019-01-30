@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Book_Author" FromRole="Author" ToRole="Book" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AuthorId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="LibraryId" Type="Int32" />
+    <Property Name="ImageALT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Author" Relationship="Self.FK_Book_Author" FromRole="Book" ToRole="Author" />
+    <NavigationProperty Name="Library" Relationship="Self.FK_Book_Library" FromRole="Book" ToRole="Library" />
+    <NavigationProperty Name="BookLocations" Relationship="Self.FK_BookLocation_Book" FromRole="Book" ToRole="BookLocation" />
+    <NavigationProperty Name="RenterBooks" Relationship="Self.FK_RenterBook_Book" FromRole="Book" ToRole="RenterBook" />
+  </EntityType>
+  <EntityType Name="BookLocation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookId" Type="Int32" />
+    <Property Name="Floor" Type="Int32" />
+    <Property Name="Block" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Book" Relationship="Self.FK_BookLocation_Book" FromRole="BookLocation" ToRole="Book" />
+  </EntityType>
+  <EntityType Name="Library">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Book_Library" FromRole="Library" ToRole="Book" />
+  </EntityType>
+  <EntityType Name="Renter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="RenterBooks" Relationship="Self.FK_RenterBook_Renter" FromRole="Renter" ToRole="RenterBook" />
+  </EntityType>
+  <EntityType Name="RenterBook">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RenterId" Type="Int32" />
+    <Property Name="BookId" Type="Int32" />
+    <Property Name="Time" Type="DateTime" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Book" Relationship="Self.FK_RenterBook_Book" FromRole="RenterBook" ToRole="Book" />
+    <NavigationProperty Name="Renter" Relationship="Self.FK_RenterBook_Renter" FromRole="RenterBook" ToRole="Renter" />
+  </EntityType>
+  <Association Name="FK_Book_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="0..1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Book_Library">
+    <End Role="Library" Type="Self.Library" Multiplicity="0..1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Library">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="LibraryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookLocation_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="BookLocation" Type="Self.BookLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BookLocation">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RenterBook_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="RenterBook" Type="Self.RenterBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RenterBook">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RenterBook_Renter">
+    <End Role="Renter" Type="Self.Renter" Multiplicity="0..1" />
+    <End Role="RenterBook" Type="Self.RenterBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Renter">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RenterBook">
+        <PropertyRef Name="RenterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Authors" EntityType="Self.Author" />
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="BookLocations" EntityType="Self.BookLocation" />
+    <EntitySet Name="Libraries" EntityType="Self.Library" />
+    <EntitySet Name="Renters" EntityType="Self.Renter" />
+    <EntitySet Name="RenterBooks" EntityType="Self.RenterBook" />
+    <AssociationSet Name="FK_Book_Author" Association="Self.FK_Book_Author">
+      <End Role="Author" EntitySet="Authors" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Book_Library" Association="Self.FK_Book_Library">
+      <End Role="Library" EntitySet="Libraries" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookLocation_Book" Association="Self.FK_BookLocation_Book">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="BookLocation" EntitySet="BookLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RenterBook_Book" Association="Self.FK_RenterBook_Book">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="RenterBook" EntitySet="RenterBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RenterBook_Renter" Association="Self.FK_RenterBook_Renter">
+      <End Role="Renter" EntitySet="Renters" />
+      <End Role="RenterBook" EntitySet="RenterBooks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

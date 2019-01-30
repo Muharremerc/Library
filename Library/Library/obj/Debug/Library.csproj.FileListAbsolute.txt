@@ -1,0 +1,210 @@
+C:\Users\muhar\source\repos\Library\Library\bin\ApplicationInsights.config
+C:\Users\muhar\source\repos\Library\Library\bin\Library.dll.config
+C:\Users\muhar\source\repos\Library\Library\bin\Library.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Library.pdb
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\csc.exe
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\csc.exe.config
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\csc.rsp
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\csi.exe
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\csi.exe.config
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\csi.rsp
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.AppContext.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Console.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.IO.Compression.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.IO.Pipes.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Security.Claims.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.ValueTuple.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Xml.XPath.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\vbc.exe
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\vbc.exe.config
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\vbc.rsp
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\VBCSCompiler.exe
+C:\Users\muhar\source\repos\Library\Library\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\muhar\source\repos\Library\Library\bin\Antlr3.Runtime.dll
+C:\Users\muhar\source\repos\Library\Library\bin\DAL.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.Web.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.ApplicationInsights.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muhar\source\repos\Library\Library\bin\Newtonsoft.Json.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Helpers.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Mvc.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Optimization.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Razor.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.WebPages.Deployment.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.WebPages.dll
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.WebPages.Razor.dll
+C:\Users\muhar\source\repos\Library\Library\bin\WebGrease.dll
+C:\Users\muhar\source\repos\Library\Library\bin\EntityFramework.dll
+C:\Users\muhar\source\repos\Library\Library\bin\DAL.pdb
+C:\Users\muhar\source\repos\Library\Library\bin\DAL.dll.config
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Helpers.xml
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Mvc.xml
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Optimization.xml
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.Razor.xml
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.WebPages.xml
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.WebPages.Deployment.xml
+C:\Users\muhar\source\repos\Library\Library\bin\System.Web.WebPages.Razor.xml
+C:\Users\muhar\source\repos\Library\Library\bin\Newtonsoft.Json.xml
+C:\Users\muhar\source\repos\Library\Library\bin\Antlr3.Runtime.pdb
+C:\Users\muhar\source\repos\Library\Library\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.AI.Web.xml
+C:\Users\muhar\source\repos\Library\Library\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\muhar\source\repos\Library\Library\bin\EntityFramework.xml
+C:\Users\muhar\source\repos\Library\Library\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\muhar\source\repos\Library\Library\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\muhar\source\repos\Library\Library\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\muhar\source\repos\Library\Library\bin\tr\System.Web.Razor.resources.dll
+C:\Users\muhar\source\repos\Library\Library\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\muhar\source\repos\Library\Library\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\muhar\source\repos\Library\Library\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\muhar\source\repos\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
+C:\Users\muhar\source\repos\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\muhar\source\repos\Library\Library\obj\Debug\Library.csproj.CopyComplete
+C:\Users\muhar\source\repos\Library\Library\obj\Debug\Library.dll
+C:\Users\muhar\source\repos\Library\Library\obj\Debug\Library.pdb
+C:\Users\muhar\source\repos\Library\Library\bin\EntityFramework.SqlServer.dll
+C:\Users\muhar\source\repos\Library\Library\bin\EntityFramework.SqlServer.xml
+F:\MVC Library\Library\Library\bin\ApplicationInsights.config
+F:\MVC Library\Library\Library\bin\Library.dll.config
+F:\MVC Library\Library\Library\bin\Library.dll
+F:\MVC Library\Library\Library\bin\Library.pdb
+F:\MVC Library\Library\Library\bin\roslyn\csc.exe
+F:\MVC Library\Library\Library\bin\roslyn\csc.exe.config
+F:\MVC Library\Library\Library\bin\roslyn\csc.rsp
+F:\MVC Library\Library\Library\bin\roslyn\csi.exe
+F:\MVC Library\Library\Library\bin\roslyn\csi.exe.config
+F:\MVC Library\Library\Library\bin\roslyn\csi.rsp
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.Managed.Core.targets
+F:\MVC Library\Library\Library\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MVC Library\Library\Library\bin\roslyn\System.AppContext.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Collections.Immutable.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Console.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.IO.Compression.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.IO.FileSystem.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.IO.Pipes.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Reflection.Metadata.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Security.AccessControl.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Security.Claims.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Security.Principal.Windows.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.ValueTuple.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Xml.XmlDocument.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Xml.XPath.dll
+F:\MVC Library\Library\Library\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\MVC Library\Library\Library\bin\roslyn\vbc.exe
+F:\MVC Library\Library\Library\bin\roslyn\vbc.exe.config
+F:\MVC Library\Library\Library\bin\roslyn\vbc.rsp
+F:\MVC Library\Library\Library\bin\roslyn\VBCSCompiler.exe
+F:\MVC Library\Library\Library\bin\roslyn\VBCSCompiler.exe.config
+F:\MVC Library\Library\Library\bin\Antlr3.Runtime.dll
+F:\MVC Library\Library\Library\bin\DAL.dll
+F:\MVC Library\Library\Library\bin\EntityFramework.dll
+F:\MVC Library\Library\Library\bin\EntityFramework.SqlServer.dll
+F:\MVC Library\Library\Library\bin\Microsoft.AI.Agent.Intercept.dll
+F:\MVC Library\Library\Library\bin\Microsoft.AI.DependencyCollector.dll
+F:\MVC Library\Library\Library\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\MVC Library\Library\Library\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\MVC Library\Library\Library\bin\Microsoft.AI.Web.dll
+F:\MVC Library\Library\Library\bin\Microsoft.AI.WindowsServer.dll
+F:\MVC Library\Library\Library\bin\Microsoft.ApplicationInsights.dll
+F:\MVC Library\Library\Library\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+F:\MVC Library\Library\Library\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MVC Library\Library\Library\bin\Microsoft.Web.Infrastructure.dll
+F:\MVC Library\Library\Library\bin\Newtonsoft.Json.dll
+F:\MVC Library\Library\Library\bin\System.Diagnostics.DiagnosticSource.dll
+F:\MVC Library\Library\Library\bin\System.Web.Helpers.dll
+F:\MVC Library\Library\Library\bin\System.Web.Mvc.dll
+F:\MVC Library\Library\Library\bin\System.Web.Optimization.dll
+F:\MVC Library\Library\Library\bin\System.Web.Razor.dll
+F:\MVC Library\Library\Library\bin\System.Web.WebPages.Deployment.dll
+F:\MVC Library\Library\Library\bin\System.Web.WebPages.dll
+F:\MVC Library\Library\Library\bin\System.Web.WebPages.Razor.dll
+F:\MVC Library\Library\Library\bin\WebGrease.dll
+F:\MVC Library\Library\Library\bin\DAL.pdb
+F:\MVC Library\Library\Library\bin\DAL.dll.config
+F:\MVC Library\Library\Library\bin\EntityFramework.xml
+F:\MVC Library\Library\Library\bin\EntityFramework.SqlServer.xml
+F:\MVC Library\Library\Library\bin\System.Web.Helpers.xml
+F:\MVC Library\Library\Library\bin\System.Web.Mvc.xml
+F:\MVC Library\Library\Library\bin\System.Web.Optimization.xml
+F:\MVC Library\Library\Library\bin\System.Web.Razor.xml
+F:\MVC Library\Library\Library\bin\System.Web.WebPages.xml
+F:\MVC Library\Library\Library\bin\System.Web.WebPages.Deployment.xml
+F:\MVC Library\Library\Library\bin\System.Web.WebPages.Razor.xml
+F:\MVC Library\Library\Library\bin\Newtonsoft.Json.xml
+F:\MVC Library\Library\Library\bin\Antlr3.Runtime.pdb
+F:\MVC Library\Library\Library\bin\System.Diagnostics.DiagnosticSource.xml
+F:\MVC Library\Library\Library\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+F:\MVC Library\Library\Library\bin\Microsoft.AI.DependencyCollector.xml
+F:\MVC Library\Library\Library\bin\Microsoft.AI.WindowsServer.xml
+F:\MVC Library\Library\Library\bin\Microsoft.AI.Web.xml
+F:\MVC Library\Library\Library\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MVC Library\Library\Library\bin\tr\System.Web.Helpers.resources.dll
+F:\MVC Library\Library\Library\bin\tr\System.Web.Mvc.resources.dll
+F:\MVC Library\Library\Library\bin\tr\System.Web.Optimization.resources.dll
+F:\MVC Library\Library\Library\bin\tr\System.Web.Razor.resources.dll
+F:\MVC Library\Library\Library\bin\tr\System.Web.WebPages.resources.dll
+F:\MVC Library\Library\Library\bin\tr\System.Web.WebPages.Deployment.resources.dll
+F:\MVC Library\Library\Library\bin\tr\System.Web.WebPages.Razor.resources.dll
+F:\MVC Library\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
+F:\MVC Library\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+F:\MVC Library\Library\Library\obj\Debug\Library.csproj.CopyComplete
+F:\MVC Library\Library\Library\obj\Debug\Library.dll
+F:\MVC Library\Library\Library\obj\Debug\Library.pdb

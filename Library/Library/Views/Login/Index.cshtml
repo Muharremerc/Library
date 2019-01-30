@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <title>Dashio - Bootstrap Admin Template</title>
+
+    <!-- Favicons -->
+    <link href="../../Content/img/favicon.png" rel="icon">
+    <link href="../../Content/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--external css-->
+    <link href="../../Content/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../../Content/css/style.css" rel="stylesheet">
+    <link href="../../Content/css/style-responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="login-page">
+        <div class="container">
+            <form class="form-login">
+                <h2 style="background:#A6ACAF" class="form-login-heading">sıng ın now</h2>
+                <div class="login-wrap">
+                    <input type="text" id="lname" name="lname" class="form-control" placeholder="Library Name" autofocus>
+                    <br>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                    <label class="checkbox">
+
+                    </label>
+                    <a style="background:#A6ACAF" class="btn btn-theme btn-block" href="javascript:Login()"><i class="fa fa-lock"></i> SIGN IN</a>
+                    <hr>
+                </div>
+                <!-- modal -->
+            </form>
+        </div>
+    </div>
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="../../Content/lib/jquery/jquery.min.js"></script>
+    <script src="../../Content/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src="../../Content/lib/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("../../Content/img/l1.jpeg", {
+            speed: 500
+        });
+    </script>
+</body>
+
+</html>
+
+<script>
+    function Login()
+    {
+        
+        var data = {
+             lname: $('#lname').val(),
+             password: $('#password').val()
+
+         };
+        $.ajax({
+            url: '@Url.Action("Log", "Login")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                if (data != false) {
+                    window.location.href("../Home");
+                } else {
+                    window.location.href("../Login");
+                }
+            },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+         });
+
+    }
+
+
+</script>

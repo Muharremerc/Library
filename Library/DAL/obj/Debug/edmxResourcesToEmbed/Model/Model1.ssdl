@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="AuthorId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="LibraryId" Type="int" />
+    <Property Name="ImageALT" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BookLocation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookId" Type="int" />
+    <Property Name="Floor" Type="int" />
+    <Property Name="Block" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Library">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Renter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RenterBook">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RenterId" Type="int" />
+    <Property Name="BookId" Type="int" />
+    <Property Name="Time" Type="date" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Book_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="0..1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Book_Library">
+    <End Role="Library" Type="Self.Library" Multiplicity="0..1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Library">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="LibraryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookLocation_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="BookLocation" Type="Self.BookLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BookLocation">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RenterBook_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="RenterBook" Type="Self.RenterBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RenterBook">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RenterBook_Renter">
+    <End Role="Renter" Type="Self.Renter" Multiplicity="0..1" />
+    <End Role="RenterBook" Type="Self.RenterBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Renter">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RenterBook">
+        <PropertyRef Name="RenterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibModelStoreContainer">
+    <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookLocation" EntityType="Self.BookLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Library" EntityType="Self.Library" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Renter" EntityType="Self.Renter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RenterBook" EntityType="Self.RenterBook" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Book_Author" Association="Self.FK_Book_Author">
+      <End Role="Author" EntitySet="Author" />
+      <End Role="Book" EntitySet="Book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Book_Library" Association="Self.FK_Book_Library">
+      <End Role="Library" EntitySet="Library" />
+      <End Role="Book" EntitySet="Book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookLocation_Book" Association="Self.FK_BookLocation_Book">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="BookLocation" EntitySet="BookLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RenterBook_Book" Association="Self.FK_RenterBook_Book">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="RenterBook" EntitySet="RenterBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RenterBook_Renter" Association="Self.FK_RenterBook_Renter">
+      <End Role="Renter" EntitySet="Renter" />
+      <End Role="RenterBook" EntitySet="RenterBook" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

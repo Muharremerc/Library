@@ -1,0 +1,71 @@
+﻿@model DAL.Model.Book
+@{
+    if (Session["Library"] as DAL.Model.Library == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<div class="row mt">
+    <div class="col-lg-12">
+        <h4>Renter Book</h4>
+        <div class="form-panel">
+
+            <div class="form-horizontal style-form">
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-1 control-label">@Model.Name  @Model.Author.Name @Model.Author.Surname</label>
+                    <div class="col-sm-5">
+                        <img src="~/Image/@Model.ImageALT" style="margin-top:15px" width="320" alt="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-1 control-label">Renter Name</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" name="renterName" id="renterName" type="text" placeholder="Renter Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-1 control-label">Renter Surname</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" name="renterSurname" id="renterSurname" type="text" placeholder="Renter Surname">
+                    </div>
+                </div>
+
+                <button type="submit" name="Submit" onclick="RentBook(@Model.Id)" id="Submit" class="btn btn-theme">Rent</button>
+
+            </div>
+        </div>
+        <!-- /form-panel -->
+    </div>
+    <!-- /col-lg-12 -->
+</div>
+
+<script>
+
+        function RentBook(Id) {
+        var data = {
+            id: Id,
+            name: $('#renterName').val(),
+            surname: $('#renterSurname').val()
+            };
+
+        $.ajax({
+            url: '@Url.Action("RentBook", "Rent")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                if (data == true)
+                window.location.href("../../Home");
+            },
+            error: function (hata, ajaxOptions, thrownError) {
+                alert(hata.status);
+                alert(thrownError);
+                alert(hata.responseText);
+            }
+        });
+    }
+
+</script>

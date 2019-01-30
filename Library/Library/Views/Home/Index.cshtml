@@ -1,0 +1,163 @@
+﻿@model List<Library.Models.BookViewModel>
+@{
+    if (Session["Library"] as DAL.Model.Library == null)
+    {
+        Response.Redirect("~/Login/Index");
+        ViewBag.Title = "Index";
+    }
+}
+<div class="row mt">
+    <div class="col-lg-12">
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-5 col-sm-5 mb" >
+                    <div class="product-panel-2 pn" style="height:270px;">
+                        <table  width="100%" height="100%">
+                            <tr>
+                                <td>
+                                    @if (item.IsActive == true)
+                                    {
+                                        <div class="fa fa-barcode fa-4x" style="margin-left:11%;width:100px;margin-bottom:100%;height:10px;font-size:20px;color:red"><br />Active </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="fa fa-barcode fa-4x" style="margin-left:11%;width:100px;margin-bottom:100%;height:10px;font-size:20px;color:black"><br />Active </div>
+                                    }
+                                </td>
+                                <td rowspan="2">
+                                    <img src="~/Image/@item.Image" style="margin-top:15px" width="120" alt="">
+                                </td>
+                                <td>
+                                    <div>
+                                        <h4 class="mt">@item.Name - @item.AuthorName</h4>
+
+
+                                        <h6>Location : @item.Location </h6>
+
+
+
+                                        @if (item.RenterName != null)
+                                        {
+
+                                            <h6>Renter : @item.RenterName</h6>
+                                            <h6>Date :@item.Time</h6>
+                                        }
+
+
+
+                                    </div>
+                                </td>
+                                
+
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <button class="btn btn-small btn-theme04" onclick="DeleteBook(@item.Id)">Delete</button>
+
+                                    
+
+                                </td>
+                                <td>
+
+                                    @if (@item.IsActive == true)
+                                    {
+                                        using (Html.BeginForm("Index", "Rent", new { id = item.Id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                        {
+                                            <button class="btn btn-small btn-theme04" type="submit">Rent</button>
+                                        }
+
+                                    }
+                                    else
+                                    {
+                                            <button class="btn btn-small btn-theme04" onclick="giveBack(@item.Id)">Give Back</button>
+                                    }
+                                    
+
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    function DeleteBook(Id)
+    {
+
+        var data = {
+            id: Id
+         };
+        $.ajax({
+            url: '@Url.Action("DeleteBook", "Book")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                if (data == true) {
+                    window.location.href("../Home");
+                } else {
+                    alert("Hata")
+                }
+            },
+             error: function (hata, ajaxOptions, thrownError) {
+                 alert(hata.status);
+                 alert(thrownError);
+                 alert(hata.responseText);
+             }
+         });
+
+    }
+
+    function Rent(Id) {
+        var data = {
+            id: Id
+        };
+        $.ajax({
+            url: '@Url.Action("Index", "Rent")',
+            dataType: "HTML",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                window.location.href("../Rent/"+i);
+            },
+            error: function (hata, ajaxOptions, thrownError) {
+                alert(hata.status);
+                alert(thrownError);
+                alert(hata.responseText);
+            }
+        });
+    }
+
+    function giveBack(Id) {
+        var data = {
+            id: Id
+        };
+        $.ajax({
+            url: '@Url.Action("giveBackbyBookId", "Rent")',
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                window.location.href("../Home");
+            },
+            error: function (hata, ajaxOptions, thrownError) {
+                alert(hata.status);
+                alert(thrownError);
+                alert(hata.responseText);
+            }
+        });
+    }
+
+</script>
